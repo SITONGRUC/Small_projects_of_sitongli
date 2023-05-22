@@ -23,6 +23,8 @@ def get_year_data(stock_code,freq,start,end,fq):
     return data
 
 #Example
-sh601919 = get_year_data('sh601919','day','2021-01-01','2021-12-31','qfq')
-sh601919.to_excel('ex.xlsx')
+
+if __name__ == '__main__':
+    sh601919 = get_year_data('sh601919','day','2021-01-01','2021-12-31','qfq')
+    sh601919.to_excel('ex.xlsx')
 
