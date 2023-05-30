@@ -4,6 +4,8 @@ import json
 import numpy as np
 import pandas as pd
 import datetime
+# The reason for this project is aiming to get the first head data in China 
+# Instead using the third-party package. 
 def get_year_data(stock_code,freq,start,end,fq):
     headers = {"User-Agent": 'ozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'}
     end_date = datetime.datetime.strptime(end,'%Y-%m-%d')
